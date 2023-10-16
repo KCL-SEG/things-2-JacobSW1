@@ -8,4 +8,4 @@ class ThingForm(forms.ModelForm):
     class Meta():
         model = Thing
         fields = {'name', 'description', 'quantity'}
-        widgets = {'bio': forms.Textarea(), 'quantity': forms.NumberInput()}
+        widgets = {'description': forms.Textarea(), 'quantity': forms.NumberInput()}
